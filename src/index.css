@@ -1,0 +1,18 @@
+.item {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+}
+.column {
+    background-color: green;
+}
+.item .num {
+    text-align: center;
+}
+.item .beSwapedColumn {
+    background-color: red;
+}
+.item .swapColumn {
+    background-color: blue;
+}

@@ -1,0 +1,22 @@
+<html>
+    <link rel="stylesheet" href="src/index.css">
+
+    <body>
+        <div id="app">
+            <div>
+                <div class="item" v-for="item in pic[0]" track-by="$index">
+                    <div class="column" 
+                        v-bind:class="{ 'beSwapedColumn': $index == pic[1], 'swapColumn': $index == pic[2] }"
+                        v-bind:style="{height: item * 10 + 'px'}">
+                     </div>
+                     <div class="num">
+                        {{item}}
+                     </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="src/index.js"></script>
+</html>
